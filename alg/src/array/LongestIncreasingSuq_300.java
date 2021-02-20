@@ -1,6 +1,7 @@
 package array;
 
 import java.util.Arrays;
+import java.util.concurrent.CompletableFuture;
 
 /**
  * 300. 最长上升子序列
@@ -47,13 +48,14 @@ public class LongestIncreasingSuq_300 {
         return res;
     }
 
+    CompletableFuture future = new CompletableFuture();
+
 
 
     public static void main(String[] agrs) {
 
         int[] nums = new int[]{9,10,2,11,7,101,18};
         part2(nums);
-
 
     }
 }
