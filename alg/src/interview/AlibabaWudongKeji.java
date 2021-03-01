@@ -38,7 +38,7 @@ public class AlibabaWudongKeji {
 
     //动态规划，找最长子串
     public static String longString() {
-        String a = "java_language_is_sweet";
+        String a = "asasqwertiyopsaxqwertiyop";
         char[] chars = a.toCharArray();
         List<Character> temp = new ArrayList<>();
         List<Character> max = new ArrayList<>();
@@ -65,7 +65,10 @@ public class AlibabaWudongKeji {
             delstemp.clear();
             temp.add(chars[i]);
         }
-        return temp.size() > max.size() ? temp.toString() : max.toString();
+        List b = temp.size() > max.size() ? temp : max;
+
+        b.forEach(c -> System.out.print(c));
+        return null;
     }
 
     private static int exist(char a,List<Character> temp) {
@@ -79,9 +82,7 @@ public class AlibabaWudongKeji {
 
     public static void main(String[] agrs) {
         //revers();
-        int num[] = new int[]{9,8,7,6,5,4};
-        //8,7,6,5,4,9;
-        bubbleSort1(num);
+        System.out.println(agrs);
     }
 
 
